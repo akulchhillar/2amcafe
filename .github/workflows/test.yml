@@ -1,12 +1,10 @@
-name: example-client-payload-action
-on:
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
   schedule:
-    - cron: "* * * * *"
-
+    - cron: "*/5 * * * *"
 jobs:
-  test:
-    name: Test
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: TestAkul
-      - run: echo "test789"
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
