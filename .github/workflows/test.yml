@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: TestAkul
-      - run: curl -X POST https://webhook.site/f650c20b-b8c4-47b5-a6ed-51bfd755b8fe -H "Content-Type: application/json" -d "{\"test\":99}"
+      - run: echo "test789"
